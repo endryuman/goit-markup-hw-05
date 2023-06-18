@@ -788,7 +788,6 @@ header {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--lite-slate);
-  display: flex;
   align-items: center;
 }
 .privacy-label-span {
