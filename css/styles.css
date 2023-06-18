@@ -513,7 +513,6 @@ header {
 .footer-container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
 }
 .footer-logo-p {
   margin-right: 120px;
@@ -547,6 +546,9 @@ header {
   letter-spacing: 0.02em;
   color: var(--white);
   margin-bottom: 16px;
+}
+.footer-soc-block {
+  margin-right: 80px;
 }
 .footer-list-soc {
   display: flex;
@@ -609,16 +611,30 @@ header {
 .footer-btn {
   font-weight: 500;
   font-size: 16px;
-  line-height: 21.5;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
-  padding: 24px 8px;
+  min-width: 165px;
+  height: 40px;
   background: var(--iris);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-btn:is(:hover, :focus) {
+  background: var(--ocean);
+  border: 1px solid transparent;
+  transition: background-color var(--transition);
+}
+.footer-btn-icon {
+  fill: var(--white);
 }
 
-/* modal----------------- */
+/* ------------modal----------------- */
 
 .backdrop {
   position: fixed;
