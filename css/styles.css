@@ -580,6 +580,7 @@ header {
 }
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 .footer-modal-label {
   display: block;
@@ -599,7 +600,9 @@ header {
   background-color: transparent;
   color: var(--white);
   padding-left: 16px;
-  margin-right: 24px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 .footer-input::placeholder {
   font-weight: 400;
@@ -623,7 +626,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
 }
 .footer-btn:is(:hover, :focus) {
   background: var(--ocean);
@@ -632,6 +634,7 @@ header {
 }
 .footer-btn-icon {
   fill: var(--white);
+  margin-left: 16px;
 }
 
 /* ------------modal----------------- */
@@ -759,6 +762,10 @@ header {
   outline: transparent;
   transition: border-color var(--transition);
   resize: none;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 .modal-textarea::placeholder {
   font-weight: 400;
@@ -770,29 +777,34 @@ header {
 .modal-textarea:focus {
   border-color: var(--iris);
 }
+.modal-field-texarea {
+  margin-bottom: 16px;
+}
+.checkbox-wrapper {
+  margin-bottom: 24px;
+}
 .check-text {
-  font-weight: 400;
   font-size: 12px;
-  line-height: 1.77;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--lite-slate);
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
 }
-.check-text span {
+.privacy-label-span {
   width: 16px;
   height: 16px;
   border: 1px solid var(--navy-blue-modal);
   border-radius: 2px;
   margin-right: 12px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
-  transition: fill var(--transition), background-color var(--transition);
+  transition: background-color var(--transition), border var(--transition),
+    fill var(--transition);
 }
-.check-text a {
+.policy-link {
   color: var(--iris);
 }
 .input-check:checked + .check-text span {
@@ -801,11 +813,12 @@ header {
   fill: var(--cloud);
 }
 .modal-btn-send {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   color: var(--white);
   padding: 16px 0;
   background: var(--iris);
@@ -813,13 +826,12 @@ header {
   border-radius: 4px;
   border: none;
   min-width: 169px;
+  height: 56px;
   transition: background-color var(--transition);
   cursor: pointer;
   margin: 0 auto;
+  display: block;
 }
 .modal-btn-send:is(:hover, :focus) {
   background-color: var(--ocean);
-}
-.button-wrapper {
-  display: flex;
 }
