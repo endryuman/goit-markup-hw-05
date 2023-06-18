@@ -797,12 +797,12 @@ header {
   border: 1px solid var(--navy-blue-modal);
   border-radius: 2px;
   margin-right: 12px;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
   transition: background-color var(--transition), border var(--transition),
     fill var(--transition);
+  display: inline-flex;
 }
 .policy-link {
   color: var(--iris);
