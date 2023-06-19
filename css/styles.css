@@ -603,6 +603,10 @@ header {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  transition: border-color var(--transition);
+}
+.footer-input:focus {
+  border-color: var(--iris);
 }
 .footer-input::placeholder {
   font-weight: 400;
@@ -803,6 +807,7 @@ header {
     fill var(--transition);
   display: inline-flex;
 }
+
 .policy-link {
   color: var(--iris);
 }
@@ -810,6 +815,7 @@ header {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
+  border-color: var(--ocean);
 }
 .modal-btn-send {
   font-family: "Roboto", sans-serif;
